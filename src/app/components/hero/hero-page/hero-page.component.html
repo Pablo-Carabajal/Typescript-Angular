@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="col-6">{{ name() }}</h1>
+  <dl>
+    <td>Nombre:</td>
+    <dd><strong>{{ name()}}</strong></dd>
+  
+    <td>Edad:</td>
+    <dd><strong>{{ age() }}</strong></dd>
+  
+    <td>Método:</td>
+    <dd><strong>{{ getHeroDescription() }}</strong></dd>
+  
+    <td>Capitalizado:</td>
+    <!-- ! Intentar  -->
+     <dd><strong>{{name() | uppercase}}</strong></dd> 
+  </dl>
+</div>
+<div class="container">
+  <button (click)="changeHero()" class="btn btn-primary mx-2">Cambiar nombre</button>
+
+  <button (click)="changeAge()" class="btn btn-primary mx-2" >Cambiar edad</button>
+  
+  <button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+</div>
+

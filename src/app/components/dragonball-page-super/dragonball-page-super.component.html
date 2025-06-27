@@ -1,0 +1,29 @@
+<h1>Dragon Ball Super</h1>
+
+<section class="row">
+  <div class="col-12 col-sm-6">
+    <h3>Agregar:</h3>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+      [value]="nombre()"
+      (input)="nombre.set(textNombre.value)"
+      #textNombre
+    />
+    <input
+      type="number"
+      class="form-control mt-2"
+      placeholder="Poder"
+      [value]="numero()"
+      (input)="numero.set(+textNumero.value)"
+      #textNumero
+    />
+    <input
+      type="button"
+      (click)="agregarPersonaje()" class="btn btn-primary mt-2" value="Crear"/>
+  </div>
+  <div class="col-12 col-sm-6">
+    <dragonball-character-list [caracter]="caracter()" />
+  </div>
+</section>

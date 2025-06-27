@@ -1,0 +1,14 @@
+ 
+    <h3>Gerreros:</h3>
+
+    @for (personaje of caracter(); track personaje.id; let ind = $index) {
+    <ul>
+      <span>{{ ind + 1 }}- {{ personaje.nombre }}</span>
+      <strong
+        [class.text-danger]="personaje.power > 9000"
+        [class.text-primary]="personaje.power < 9001"
+      >
+        ({{ personaje.power }})</strong
+      >
+    </ul>
+    }
