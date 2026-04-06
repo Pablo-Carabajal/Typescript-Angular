@@ -1,6 +1,15 @@
-# IniciandoAngular
+# Typescript Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+Proyecto de práctica con la finalidad de probar conceptos básicos de Angular y TypeScript.
+
+## Tecnologías
+
+- Angular 18
+- TypeScript
+
+## Estado
+
+Proyecto de práctica - En desarrollo.
 
 ## Development server
 
